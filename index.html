@@ -1,208 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/d339f88e11.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran Kumar K | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://kit.fontawesome.com/d339f88e11.js" crossorigin="anonymous" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-FwhvBsFDALxHkNcBjuQzI9mCt2zgwDWSLTA9TsyW5mxEtc33BB9yK1qvdhkqQUwn" crossorigin="anonymous">
 </head>
-<body style="background: black;">
-    <div id="header">
-        <div class="container">
-            <h2 class="icon">KIRU</h2>
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+<body style="background-color: #f5f5f5;">
 
-            </nav>
-       
-<div class="header-text">
-    <p>Java Developer</p>
-    <h1>Hi, I'm <span>KIRAN KUMAR K</span> <br> From HAVERI</h1>
-</div>
-        </div>
-    </div>
- 
-                       <!-- ------about--------- -->
-<div id="about">
+  <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="https://github.com/KIRAN-KUMAR-K3/demo/blob/main/Images/sam.JPG?raw=true">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1><br>
-                <p>I am a skilled Java developer with a passion for creating efficient and scalable software
-                solutions. With a deep understanding of object-oriented programming and Java frameworks,
-                I have successfully developed robust applications and integrated databases to deliver exceptional
-                 user experiences. My expertise in troubleshooting and debugging allows me to ensure the stability
-                 and reliability of the software I develop. I thrive in collaborative environments and have 
-                 experience working within Agile methodologies, delivering high-quality code within tight deadlines.
-                 Committed to continuous learning, I stay updated with the latest advancements in Java to deliver 
-                 cutting-edge solutions that drive innovation.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Andriod apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li><span>2019-2020</span><br>UI/UX Design Training at TCS</li>
-                            <li><span>2020-2022</span><br>Software coordinator at NarayanaNethralaya</li>
-                            <li><span>2023-2024</span><br>Intenship at Google Flutter/App Development</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2025</span><br>BE from Alva's Institute of Engineering and Technology</li>
-                            <li><span>2022</span><br>Front-end Developer at NarayanaNethralaya</li>
-                            <li><span>2022</span><br>Diploma in Mechanical Engineering</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
+      <a href="#" class="logo">KKK</a> <nav>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-bars menu-toggle" onclick="openMenu()"></i> </ul>
+      </nav>
     </div>
-</div>
- 
-    <!-- =========Services============ -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div class="change">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>I am a skilled Java developer with a passion for creating efficient and scalable software
-                        solutions. With a deep understanding of object-oriented programming and Java frameworks,</p>
-                    <a href="#">Learn more</a>           
-                </div>
-                <div class="change">
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Development</h2>        
-                    <p>I am a skilled Java developer with a passion for creating efficient and scalable software
-                        solutions. With a deep understanding of object-oriented programming and Java frameworks,</p>
-                    <a href="#">Learn more</a>           
-                </div>  
-                <div class="change">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design </h2>
-                    <p>I am a skilled Java developer with a passion for creating efficient and scalable software
-                        solutions. With a deep understanding of object-oriented programming and Java frameworks,</p>
-                    <a href="#">Learn more</a>           
-                </div>
-            </div>
-              
-             
-        </div>
-    </div>
-    <!-- =================Portfolio=============== -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-             <div class="work-list">
-                <div class="work">
-                    <img src="./Images/work2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Vedio Consulation app</h3>
-                        <p>This is demo content for more information download the app from google play store</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/work1 (1).jpg" alt="">
-                    <div class="layer">
-                        <h3>Online shopping app</h3>
-                        <p>This is demo content for more information download the app from google play store</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/work4.jpg" alt="">
-                    <div class="layer">
-                        <h3>Photo editing app</h3>
-                        <p>This is demo content for more information download the app from google play store</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-             </div>
-             <a href="" class="btn">See more</a>
-        </div>
-    </div>
-<!-- ==================Contact me=========================== -->
+  </header>
 
-<div id="contact">
+  <section id="home" class="hero">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-            <div class="contact-left">
-                
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>18kirankumar.k03@gmail.com</p>
-                <p><i class="fa-sharp fa-solid fa-phone"></i>8310937381</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/kirankumar.k0000/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/kiran-kumar-k3//"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/KIRAN-KUMAR-K3"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="./Images/Resume-NEW.pdf" class="btn btn2">Download Cv</a>
-            </div>
-            </div>
-            <div class="col-sm-6">
-            <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
-            </div>
-        </div>
+      <h1 class="hero-title">Hi, I'm Kiran Kumar K</h1>
+      <h2 class="hero-subtitle">Java Developer | Linux Enthusiast</h2> <p>From Haveri, India. Passionate about creating efficient and innovative software solutions.</p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
     </div>
-    <div class="copyright">Copyright © 2023 kkk. All rights reserved.</div>
-</div>
+  </section>
 
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="your-profile-picture.jpg" alt="Your Profile Picture"> </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>I am a skilled Java developer with a strong understanding of object-oriented programming and Java frameworks. I have experience in creating robust applications and integrating databases to deliver exceptional user experiences. My expertise in troubleshooting and debugging ensures the stability and reliability of the software I develop.</p>
+          <p>Beyond Java, I am a Linux user with 4-5 years of experience. I also possess basic knowledge of networking, computer hardware, and ethical hacking, demonstrating my well-rounded technical background.</p>
+          <p>I thrive in collaborative environments and have experience working within Agile methodologies. I am a committed learner, constantly seeking to stay updated with the latest advancements in Java and other relevant technologies to deliver cutting-edge solutions that drive innovation.</p>
+          <ul class="skills-list">
+            <li>Java Development</li>
+            <li>Databases</li>
+            <li>Linux</li>
+            <li>Networking Basics</li>
+            <li>Ethical Hacking (Fundamentals)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-    var tablinks=document.getElementsByClassName("tab-links")
-    var tabcontents=document.getElementsByClassName("tab-contents")
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-</body>
-</html>
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="sub-title">My Services</h2>
+      <div class="services-list">
+        <div class="service">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>I can create user-friendly and responsive web applications using modern technologies.</p>
+        </div>
+        <div class="service
